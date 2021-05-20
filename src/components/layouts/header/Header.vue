@@ -1,6 +1,11 @@
 <template>
   <header>
     <div class="header__container">
+      <RouterLink to="/" class="header__acount">
+        <div class="header__avatar">
+          <img src="../../../assets/image/icon-header.svg" alt="icon" />
+        </div>
+      </RouterLink>
       <div class="header__login">
         <p>
           לארשי לאר <strong>שיןכוס</strong><br />
@@ -12,11 +17,6 @@
           >
         </p>
       </div>
-      <RouterLink to="/" class="header__acount">
-        <div class="header__avatar">
-          <img src="../../../assets/image/icon-header.svg" alt="icon" />
-        </div>
-      </RouterLink>
     </div>
     <div
       v-if="this.$route.path === '/'"
@@ -42,7 +42,6 @@ export default {
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: flex-end;
     box-shadow: (0px 0px 20px rgba(0, 0, 0, 0.2));
     padding: 2.1rem 0;
     background: white;

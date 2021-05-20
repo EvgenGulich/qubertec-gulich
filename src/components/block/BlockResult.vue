@@ -1,5 +1,5 @@
 <template>
-  <div class="result__inform">
+  <div class="result__inform" dir="ltr">
     <div class="table__header">
       <div class="item__one table__header_item">חוקלל חלשנ</div>
       <div class="item__two table__header_item">הסילופ ‘סמ</div>
@@ -74,8 +74,14 @@
         <div class="flex">
           <div class="tools__item">
             <div class="tools__item_icon">
-              <img class="icon__des" src="../../assets/image/letter.svg" />
-              <img class="icon__mob" src="../../assets/image/letter-w.svg" />
+              <img
+                class="icon__des icon-letter"
+                src="../../assets/image/letter.svg"
+              />
+              <img
+                class="icon__mob icon-letter"
+                src="../../assets/image/letter-w.svg"
+              />
             </div>
             <div class="tools__item_text">
               תכירע
@@ -120,6 +126,18 @@ export default {
 
   @media screen and (max-width: 768px) {
     display: none;
+  }
+}
+
+.icon-letter {
+  padding-left: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .result__inform {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -219,6 +237,8 @@ div.item__nine {
 }
 .item__cheked_icon {
   margin: auto;
+  width: 1.875rem;
+  height: 1rem;
 }
 .table__tr {
   position: relative;
@@ -232,12 +252,17 @@ div.item__nine {
   cursor: pointer;
 
   @media screen and (max-width: 768px) {
+    width: 48%;
     height: auto;
     flex-wrap: wrap;
     padding: 0.625rem;
     color: #21325e;
     font-weight: bold;
     margin: 1.6rem 0;
+  }
+
+  @media screen and (max-width: 560px) {
+    width: 100%;
   }
 
   &:hover {

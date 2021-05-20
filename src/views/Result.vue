@@ -1,7 +1,7 @@
 <template>
   <div class="result__container">
     <BaseBackground src="Result"></BaseBackground>
-    <section class="result">
+    <section class="result" dir="ltr">
       <div class="result__title">
         <div class="result__toggle">
           <div
@@ -170,6 +170,10 @@ export default {
   width: 76.25rem;
 
   @media screen and (max-width: 1200px) {
+    width: 75%;
+  }
+
+  @media screen and (max-width: 769px) {
     width: 90%;
   }
 

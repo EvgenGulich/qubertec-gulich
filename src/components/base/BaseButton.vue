@@ -30,6 +30,9 @@ button.button {
   border-radius: 2.2rem;
   margin: 0 1rem;
   cursor: pointer;
+  @media screen and (max-width: 800px) {
+    width: 16rem;
+  }
 
   @media screen and (max-width: 375px) {
     width: 9.75rem;
@@ -37,7 +40,8 @@ button.button {
     margin: 0;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: (0px 0px 20px rgba(0, 0, 0, 0.8));
   }
 
@@ -52,7 +56,7 @@ button.button {
 button.button__back {
   background: #c4c4c4;
 
-  &::before {
+  &::after {
     content: "◄";
     display: inline-block;
     font-size: 2rem;

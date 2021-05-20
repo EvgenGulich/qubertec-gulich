@@ -3,11 +3,11 @@
     <BaseBackground :src="src"></BaseBackground>
     <section class="login">
       <div class="login__title">
-        <div class="login__text">
-          <p>ריחמה תעצהב היפצ - תכרעמל הסינכ</p>
-        </div>
         <div class="login__icon">
           <img src="../assets/image/icon-login.svg" alt="icon" />
+        </div>
+        <div class="login__text">
+          <p>ריחמה תעצהב היפצ - תכרעמל הסינכ</p>
         </div>
       </div>
       <div class="login__discription">
@@ -46,10 +46,10 @@
       </div>
       <div class="login__form">
         <div class="button__group">
-          <BaseButton trigger="back">הסינכ</BaseButton>
           <RouterLink to="/result">
             <BaseButton>לוטיב</BaseButton>
           </RouterLink>
+          <BaseButton trigger="back">הסינכ</BaseButton>
         </div>
       </div>
     </section>
@@ -90,7 +90,6 @@ export default {
 
   &__title {
     display: flex;
-    justify-content: flex-end;
     width: 100%;
     padding-top: 3rem;
     position: relative;
@@ -118,7 +117,6 @@ export default {
       color: white;
       margin: auto;
       font-size: 3rem;
-      text-align: right;
 
       @media screen and (max-width: 768px) {
         font-size: 1.5rem;
@@ -130,6 +128,10 @@ export default {
     font-size: 1.5rem;
     text-align: center;
     padding-top: 5rem;
+
+    @media screen and (max-width: 768px) {
+      padding-top: 3rem;
+    }
   }
   &__input {
     display: block;
@@ -139,6 +141,7 @@ export default {
     font-size: 2rem;
     padding: 0 1.5rem 0 2.6rem;
     direction: rtl;
+    border: none;
 
     @media screen and (max-width: 768px) {
       width: 20.6rem;
