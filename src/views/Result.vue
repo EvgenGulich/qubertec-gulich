@@ -238,7 +238,7 @@ export default {
       font-size: 1.875rem;
 
       @media screen and (max-width: 768px) {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
   }
@@ -352,6 +352,7 @@ export default {
   font-size: 2rem;
   padding: 0 1.5rem 0 2.6rem;
   direction: rtl;
+  border: none;
 
   @media screen and (max-width: 768px) {
     width: 100%;

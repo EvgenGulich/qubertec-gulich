@@ -144,6 +144,12 @@ export default {
 .table__header_item {
   color: white;
   text-align: center;
+  @media screen and (max-width: 1200px) {
+    font-size: 0.8rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
 .item__one {
@@ -244,7 +250,7 @@ div.item__nine {
   position: relative;
   display: flex;
   width: 100%;
-  height: 2.8rem;
+  min-height: 2.8rem;
   background: white;
   border-radius: 2.2rem;
   padding: 1px;
@@ -290,6 +296,7 @@ div.item__nine {
   margin: 0.5rem 0;
   padding: 0 0.5rem;
   border-right: 0.0625rem solid #e5e5e5;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     border-right: none;
@@ -299,8 +306,13 @@ div.item__nine {
   text-align: center;
   width: 100%;
 
+  @media screen and (max-width: 1200px) {
+    font-size: 0.8rem;
+  }
+
   @media screen and (max-width: 768px) {
     text-align: right;
+    font-size: 1rem;
   }
 }
 .table__tr_tools {
